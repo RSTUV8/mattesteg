@@ -8,4 +8,12 @@ Riktige førstesvar uten bilde/hint regnes som selvstendige svar. Feilsvar gjør
 
 Kjør `node checks.cjs` for kontroller av oppgavegeneratoren.
 
+## Publisering på Vercel
+
+Importer GitHub-repositoriet `RSTUV8/mattesteg` i Vercel og bruk `main` som produksjonsgren. La Root Directory være prosjektroten (ikke `dist`). `vercel.json` setter Framework Preset til Other, hopper over installasjon og bygging og publiserer filene i `dist`. Ingen miljøvariabler eller database er nødvendig for denne versjonen.
+
+Appen bruker ikke Sites-innlogging; innloggingskravet i den private Sites-prototypen kommer fra vertstjenesten. Tilgang til Vercel-versjonen styres av Vercel-prosjektets egne innstillinger. Lokal fremgang følger nettadressen og nettleseren, og flyttes ikke automatisk fra Sites til Vercel.
+
+Konfigurasjonsreferanse: https://vercel.com/docs/project-configuration/vercel-json
+
 Neste utvikling: flere oppgavetyper (dra/plasser/bygg), feilanalyse og alternative forklaringer, repetisjon etter tid, flere lokale elevprofiler, kvalitetssikret innhold koblet til LK20 og senere semesterprøver. Publisert prototype er privat; det planlagte læringsverktøyet skal være gratis for elever.
