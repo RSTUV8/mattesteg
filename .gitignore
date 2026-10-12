@@ -1,0 +1,11 @@
+# Local dependencies and generated deployment archives
+node_modules/
+*.tar.gz
+*.log
+
+# Local credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
